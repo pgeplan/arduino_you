@@ -1,0 +1,41 @@
+void spinRight(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(FORWARD);
+  motorR.run(BACKWARD);
+}
+
+void spinLeft(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(BACKWARD);
+  motorR.run(FORWARD);
+}
+
+void turnRight(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(FORWARD);
+  motorR.run(RELEASE);
+}
+
+void turnLeft(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(RELEASE);
+  motorR.run(FORWARD);
+}
+
+void goBackward(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(BACKWARD);
+  motorR.run(BACKWARD);
+}
+
+void goForward(int botSpeed) {
+  motorL.setSpeed(botSpeed);
+  motorR.setSpeed(botSpeed);
+  motorL.run(FORWARD);
+  motorR.run(FORWARD);
+}
